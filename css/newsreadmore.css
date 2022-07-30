@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap');
+
+:root{
+    --primary-color: tomato;
+    --secondary-color: rgba(0,0,0,0.9);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+/*start restart btn*/
+.restarts{
+    width: 40px;
+    height:40px;
+    background:var(--secondary-color);
+    color:#fff;
+    font-size: 20px;
+    border:none;
+
+    position: fixed;
+    right:0;
+    bottom:0;
+}
+
+/*end restart btn*/
+
+/* resuable components */
+
+hr{
+    color: rgba(0,0,0,0.2);
+}
+
+
+/* resuable components */
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Start Header Section */
+
+
+header{
+    height: 85vh;
+    background: linear-gradient(45deg,rgba(0,0,0,0.3),rgba(0,0,0,0.2)),url('https://heartstrokeprod.azureedge.net/-/media/images/articles/foodguideplatev2.ashx?rev=372b23652cd243f98bef2cca920a6fd4&bc=f7f7f7&w=1160&h=653&as=1&la=en&hash=32388F46CEA12E28FA9E7F05FE09110A');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+
+    position: relative;
+}
+
+header::after{
+    content: " ";
+    display: block;
+
+    width: 100%;
+    height: 32px;
+
+    background: linear-gradient(45deg, #fff 30%, skyblue 25%, skyblue 25%, transparent 25%),linear-gradient(-45deg, #fff 30%, transparent 25%);
+    background-position: left top;
+    background-repeat: repeat-x;
+    background-size: 12px 32px;
+
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+}
+
+
+
+/* start nav */
+
+
+.navbar{
+    padding: 20px 30px;
+    transition: all .7s;
+}
+
+.navbars{
+    padding: 15px;
+     background-color: var(--secondary-color);
+    transition: all .7s;
+
+}
+
+.logos{
+    width: 150px;
+    transition: all .7s;
+}
+
+.activenavs{
+    border: 2px solid var(--primary-color);
+
+}
+
+
+
+/* end nav */
+
+.banners{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.btn-books{
+    background-color: var(--primary-color);
+    color: #fff;
+    border: 1px solid var(--primary-color);
+    font-size: 16px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 12px 24px;
+    
+    position: relative;
+
+    z-index: 10;
+
+    overflow: hidden;
+
+    transition: all .7s ease;
+
+}
+
+.btn-books:hover{
+    background-color: #fff;
+    color: var(--primary-color);
+    /* border: 1px solid var(--primary-color); */
+}
+
+.btn-books::before{
+    content: 'Book a table';
+    width: 100%;
+    height: 100%;
+    background: var(--primary-color);
+    color: transparent;
+    
+    position: absolute;
+    left: 0;
+    top: 0;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transform: translateY(0%);
+    transform-origin: center;
+    
+    z-index: -1;
+
+    transition: all .7s ease ;
+}
+
+.btn-books:hover::before{
+    opacity: 0;
+    transform: translateY(-100%);
+}
+
+
+/* End Header Section */
+
+
+
+/* Start News section */
+
+
+.news-titles{
+    text-decoration: none;
+    color: #000;
+    transition: all .7s;
+}
+
+.news-titles:hover{
+    color: var(--primary-color);
+}
+
+.card{
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    margin-bottom: 30px;
+    border: none;
+    overflow: hidden;
+}
+
+.card .images{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top:0;
+    text-align: center;
+    object-fit: cover;
+
+    transform: scale(1);
+
+    transition: all .5s;
+    
+}
+
+.card:hover .images{
+    transform: scale(1.2);
+}
+
+.texts{
+    color: var(--primary-color);
+}
+
+.texts2{
+    font-size: 16px;
+}
+
+.texts3{
+    cursor: pointer;
+}
+
+.btn-readmores{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: var(--primary-color);
+    font-size: 16px;
+    letter-spacing: .5px;
+
+}
+
+.btn-readmores:hover{
+    color: var(--primary-color);
+}
+
+.box{
+    width: 80%;
+    border: 1px solid #000;
+    padding: 15px 30px;
+
+    position: relative;
+}
+
+.searchs{
+    
+    border: none;
+    outline: none;
+    
+}
+
+.search-icons{
+    color: #000;
+    position: absolute;
+    right: 0;
+    top:50%;
+    transform: translateX(-55%) translateY(-50%);
+
+    font-size: 22px;
+}
+
+.search-icons:hover{
+    color: #000;
+}
+
+.form-boxs{
+    width: 100%;
+    height: auto;
+    background: #e7eff3;
+    padding: 50px;
+}
+
+.form-controls{
+    width: 100%;
+    padding: 15px 25px;
+    border: none;
+    outline: none;
+}
+
+.form-controls:active{
+    border: none;
+}
+
+
+/* End News Section */
+
+
+/* Start Tworeader Section */
+.reader-heads{
+    color:#bdbdbd;
+}
+
+.reader-texts{
+    color:#0d4c63;
+}
+
+.reader-boxs:hover .reader-arrows{
+    color: var(--primary-color);
+}
+
+.reader-heads,.reader-texts,.reader-arrows{
+    transition:all .5s;
+}
+.reader-boxs:hover .reader-heads{
+    color:#a6a4a4;
+}
+
+.reader-boxs:hover .reader-texts{
+    color:#08303e;    
+}
+
+/* End Tworeader Section */
+
+/* Start Email Section */
+form{
+    width: 90%;
+}
+
+.input-gp{
+    position:relative;
+}
+
+
+.emails{
+width: 90%;
+padding:12px 10px;
+}
+
+.emails:focus{
+    outline:none;
+}
+
+.next-btn{
+    background:transparent;
+    border:none;
+
+    position:absolute;
+    top:15px;
+    right:68px;
+
+    transition: right .5s;
+}
+
+.next-btn:hover{
+
+    right:55px;
+}
+
+.next-btn > i{
+    font-size:26px;
+}
+/* End Email Section */
+
+/* Start Contact Section */
+.btn-icon{
+    width:40px;
+    height:40px;
+    background:#000;
+    color:#fff;
+    border-radius: 5px;
+
+    transform:rotate(-45deg);
+    transition:all .5s;
+}
+
+.btn-icon > i{
+    transform:rotate(45deg);
+}
+
+.ft-hovers:hover .btn-icon{
+    transform: rotate(0deg);
+    background:tomato;
+    border:none;
+}
+
+.ft-hovers:hover .btn-icon > i{
+    transform: rotate(0deg);
+}
+
+.ft-hovers:hover .text-hover{
+    color:tomato;
+}
+/* End Contact Section */
+
+/*Start Footer Section*/
+.circle-icons{
+    width: 44px;
+    height: 44px;
+    color:#fff;
+    font-size:21px;
+    background:tomato;
+    border:none;
+    border-radius: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: all .5s;
+}
+
+.circle-icons:hover{
+    transform: rotate(1turn);
+    background:#000;
+}
+
+/*End Footer Section*/
