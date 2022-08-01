@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Source+Sans+Pro:wght@300&display=swap');
+
+/* *{
+    overflow-x: hidden;
+} */
+
+
+/*start restart btn*/
+.restarts{
+    width: 40px;
+    height:40px;
+    background: rgba(0,0,0,0.9);
+    color:#fff;
+    font-size: 20px;
+    border:none;
+
+    position: fixed;
+    right:0;
+    bottom:0;
+}
+
+/*end restart btn*/
+
+body{
+    overflow-x: hidden;
+}
+
+header{
+    height: 80vh;
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),
+                url('https://euclidesoftwaresolutions.com/themeforest/ess-restaurant/images/contact-bg.webp');
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+/* Start Nav Section */
+
+.text-tomatos{
+    color: tomato;
+}
+.bats{
+
+    /* background-color: tomato; */
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding: 12px 22px;
+    border: 1px solid tomato;
+    
+    position: relative;
+
+    z-index: 10;
+
+    overflow: hidden;
+
+    transition: all .7s ease;
+
+
+
+    /* border: 3px solid tomato;
+    color: tomato;
+    font-size:16px;
+    padding: 10px 15px;
+    transition: all .5s; */
+   
+}
+
+.bats::before{
+    content: 'Book a table';
+    width: 100%;
+    height: 100%;
+    background: tomato;
+    color: transparent;
+    
+    position: absolute;
+    left: 0;
+    top: 0;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transform: translateY(0%);
+    transform-origin: center;
+    
+    z-index: -1;
+
+    transition: all .7s ease ;
+}
+
+.bats:hover::before{
+    opacity: 0;
+    transform: translateY(-100%);
+}
+
+.bats:hover{
+    /* background-color: tomato; */
+    color: tomato;
+}
+
+.navbar{
+    padding: 20px 30px;
+    transition: all .7s;
+}
+
+.navimgs{
+    width: 150px;
+    transition: all .7s;
+}
+
+
+.navmenus{
+    background-color: #555;
+    height: 70px;
+}
+
+/* End Nav Section */
+/* Start Banner */
+
+#banners{
+    background: linear-gradient(-150deg,
+    rgba(0,0,0,0.3)70%,
+    ,transparent 30%),
+    url('https://euclidesoftwaresolutions.com/themeforest/ess-restaurant/images/contact-bg.webp');
+background-repeat:no-repeat;
+background-size:5%;
+background-position: center;
+background-attachment: fixed;
+}
+#banners h2{
+    text-transform: uppercase;
+    font-size:50px;
+    transform: translateY(-95px);
+
+}
+
+
+
+/* End Banner */
+
+ /* Start Keep Up Section  */
+.kuds{
+    background-color: #f4f4f4;
+}
+
+.arrbtns{
+   transform: translate(96.5%,-40px);
+}
+.arrbtns:hover .arrimgs{
+    transform: translate(7px);
+}
+
+ /* End Keep Up Section  */
+
+/* Start Footer */
+footer{
+    background-color: #f4f4f4;
+    padding: 20px 25px;
+}
+.iconsms{
+    width: 50px;
+    height: 50px;
+    background-color: tomato;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+    padding: 10px;
+    margin: 7px;
+
+    cursor: pointer;
+
+    transition: all .5s;
+}
+.iconsms:hover{
+    transform: rotate(1turn);
+    background-color: #333;
+    color:#fff;
+}
+
+
+
+/* End Footer */

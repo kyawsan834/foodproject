@@ -62,7 +62,7 @@ header::after{
     background: linear-gradient(45deg, #fff 30%, skyblue 25%, skyblue 25%, transparent 25%),linear-gradient(-45deg, #fff 30%, transparent 25%);
     background-position: left top;
     background-repeat: repeat-x;
-    background-size: 12px 32px;
+    background-size: 12px;
 
 
     position: absolute;
